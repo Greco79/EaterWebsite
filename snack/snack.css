@@ -1,0 +1,84 @@
+.col-main {
+    float: left;
+    width: 950px;
+    height:2109px;
+    min-height: 1px;
+    margin-left:160px;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+        font-size: 12px;
+}
+
+.skin-box-up {
+    position: static;
+}
+.skin-box-up{
+	margin-top:0px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.skin-box-hd {
+	margin-top:0px;
+	line-height:65px;
+	text-align:middle;
+}
+.skin-box-act{
+	margin-top:0px;
+	width:950px;
+	height:880px;
+}
+.skin-box-hd {
+    background: #002855;
+    height: 65px;
+    border: 0;
+    padding: 0;
+    position: relative;
+}
+
+.item{
+	margin-left:50px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    border:3;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.skin-box-bd .item  {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.cprice-area {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.cprice-area .symbol {
+    color: #999;
+    font-family: arial;
+    margin-right: 3px;
+}
+.cprice-area .c-price {
+    font-size: 12px;
+    color: #f40;
+    font-weight: 700;
+    font-family: verdana,arial;
+}
+.foot{
+	background: #002855;
+	margin-top:200px;
+	height:300px;
+    border: 0;
+    padding: 0;
+    position: relative;
+}

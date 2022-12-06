@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html class="svg fp-enabled" style="overflow:visible; height:initial;" lang="zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>伊特官方网站-全国零食畅销品牌</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="jquery-1.12.4.min.js"></script>
+	<script src="jquery.fullpage.min.js"></script>
+	<script src="wow.min.js"></script>
+	<style>
+		.bgb{background-color:#FFFFFF;}
+        .cont{width:992px; margin:0 auto; display:none; z-index:9;overflow: hidden }
+        .b{font-weight:bold}
+        .hs{color:#666666}
+		.hs-s{line-height:23px;}
+        .jh{color: #e1251b}
+        .jh1{color: #F19741}
+        .bzb{color:#FFFFFF; font-size:14px}
+        .bai{color:#cbcccc; font-size:14px}
+        .spxl{font-size:14px; margin-bottom:38px; float:left; width:180px}
+        .spxP{font-size:14px; margin-bottom:20px;width:168px;float: left}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        /*a:hover {
+            text-decoration: underline;
+        }*/
+       a{ text-decoration: none}
+        a:hover{color:#e1251b}
+        a:active {
+            text-decoration: none;
+        }
+
+        #top{width: 100%; height:76px; z-index:13; position:fixed; right:0px; top:0px; background-color:#000000;}
+        #top .logo{ margin-top:20px; width:166px; float:left}
+        .topUL1{margin-left:36px; float:left; width:920px; height:76px;}
+        .topUL1 li{width:100px; line-height:76px; height:76px; float:left}
+        .topUL1 li a:hover{color:#F19741; text-decoration: none;}
+
+        /*#top .rdh{ width:400px; line-height:50px; float:right; margin-right:15px; text-align: right;}*/
+        #top .rdh{ width:300px;position: absolute;right: 20px;height: 76px;line-height: 76px}
+
+        .rdh .rdhUl{margin-left: 0px;}
+        .rdh .rdhLi{float: left;width: 100px;text-align: center;background-color:#000000;}
+
+        /*.rdh .rdhLi a{display: block;width:100px;height: 76px}*/
+        .Downapp{background: url("http://imgs.3songshu.com/www/Dapp.png") no-repeat center left;display: block;height: 76px}
+        .shareBtn{background: url("http://imgs.3songshu.com/www/shareion.png") no-repeat center center;display: block;height: 76px}
+        .callme{display: block;height: 76px;}
+        .callme span{
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        .Arrow{
+            background: url("http://imgs.3songshu.com/www/djt.png") no-repeat center center;
+            display: inline-block;
+            height: 12px;width: 12px;
+        }
+        .Arrow_up{
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);}
+
+        .callmeul{position: absolute;width: 100px;top: 76px;height: 230px;background: #fff;display: none;z-index: 111}
+        .callmeul li{height: 46px;line-height: 46px;font-size: 14px;}
+
+        .callmeul li a{height: 46px;line-height: 46px;color: #000}
+        .callmeul li a:hover{color: #F19741}
+
+        .QRcode{position: absolute;width: 100px;top: 76px;height: 100px;background: #fff;z-index: 111;display: none}
+
+        .whitem{display: none}
+        .productitem{display: none}
+
+        .subt{color:#666666}
+        .subt:hover{color:#F19741}
+	</style>
+	<script>
+		function playmp3(){
+var player="<embed src=music.mp3 width=50 height=20 loop=-1>";
+
+document.getElementById("play").innerHTML=player;
+}
+	</script>
+</head>
+
+<body class="fp-enabled" style='padding: 0px; overflow: hidden auto; background: rgba(0, 0, 0, 0) url("./firstpage/bg6.png") repeat fixed 0% 0%;'>
+<header>
+<div class="header"style="margin:0 20px;">
+	<div class="header-inner">
+
+		<a class="header-logo" href="mainpage.html">
+			<img src="logo.png" >
+		</a>
+
+		<div >
+
+		    <div class="header-share" id="play" onmouseover="this.style.cursor='pointer';" onclick="playmp3();">点击播放</div>
+		</div>
+
+		<div class="header-lang header-lang-pc">
+			中文CN
+		</div>
+
+        <div class="header-menu">
+        	<ul class="header-menu-ul">
+        		<li class="menu-item">
+        			<a class="menu-link" href="./yes/eat1.html">关于我们</a>
+        		</li>
+
+        		<li class="menu-item">
+        			 <a class="menu-link " href="./snack/snack.html">零食王国</a>
+        		</li>
+
+        		<li class="menu-item ">
+        			<a class="menu-link " href="./vip/vipp.html">VIP</a>
+        		</li>
+
+        		<li class="menu-item">
+        			 <a class="menu-link " href="./join/join.html">加盟专区</a>
+        		</li>
+
+        	</ul>
+        		
+        	
+        </div>	
+	</div>
+</div>	
+
+</header>
+<div id="main" style="">
+	<style>
+		.bg{
+            background-position:center top;
+             background-repeat:no-repeat;
+        }
+        .movebox2{
+            animation:movedonghua 3.5s 1;
+        }
+
+        @keyframes movedonghua {
+            100%	{transform:translateY(0px)}
+        }
+
+        .syz_move{
+            animation:syz_moved 16s infinite;
+            animation-timing-function:ease-out;
+        }
+        @keyframes syz_moved {
+            100%	{transform:translateY(0px)}
+        }
+	</style>
+	<script>
+		       var movelist=["cb5","cb4","cb3","cb2","cb1","scd","xhy","yun4","yun5","yun3"];
+	</script>
+	<div class="bg" id="boxff" id="content" style="width:100%; height:7150px;"></div>
+    <div id="cb6" class="bg" style="background-image:url(./firstpage/bt11.png); width:100%; height:182px; position:absolute; display:none; position:fixed; left:0px; top:420px; z-index:7"></div>
+    <div id="cb7" class="bg" style="background-image:url(./firstpage/bt11.png); width:100%; height:182px; position:absolute; display:none; position:fixed; left:0px; top:600px; z-index:7"></div>
+    <div id="cb5" class="bg" style="background-image:url(http://imgs.3songshu.com/www/cb5.png); width:100%; height:1289px; position:absolute; position:fixed; left:0px; top:200px; z-index:1"></div>
+    <div id="cb4" class="bg" style="background-image:url(http://imgs.3songshu.com/www/cb4.png); width:100%; height:806px; position:absolute; position:fixed; left:0px; top:1000px; z-index:3"></div>
+    <div id="cb3" class="bg" style="background-image:url(http://imgs.3songshu.com/www/cb3.png); width:100%; height:823px; position:absolute; position:fixed; left:0px; z-index:4; top: 1700px;"></div>
+    <div id="cb2" class="bg" style="background-image:url(http://imgs.3songshu.com/www/cb2.png); width:100%; height:1368px; position:absolute; position:fixed; left:0px; z-index:5;top: 2200px; "></div>
+    <div id="cb1" class="bg" style="background-image:url(http://imgs.3songshu.com/www/cb1.png); width:100%; height:1902px; position:absolute; position:fixed; left:0px;  z-index:6; top: 3000px;"></div>
+    <div id="bg" class="bg" style="background-image:url(http://imgs.3songshu.com/www/yz.png); width:100%; height:4209px; position:absolute; position:fixed; left:0px; z-index:9;top:6500px; background-size: 100%;  "></div>
+
+    <div id="scd" class="bg" style="background-image:url(http://imgs.3songshu.com/www/scd.png); width:547px; height:871px; position:absolute; position:fixed; left:100px; top:450px; z-index:3"></div>
+    <div id="xhy" class="bg" style="background-image:url(http://imgs.3songshu.com/www/xhy.png); width:100%; height:909px; position:absolute; position:fixed; left:0px; top:120px; z-index:3"></div>
+    <div id="yun4" class="bg" style="background-image:url(http://imgs.3songshu.com/www/yun4.png); width:972px; height:513px; position:absolute; position:fixed; left:0px; top:2600px; z-index:7"></div>
+    <div id="yun5" class="bg" style="background-image:url(http://imgs.3songshu.com/www/yun5.png); width:613px; height:760px; position:absolute; position:fixed; right:0px; top:2300px; z-index:7"></div>
+    <div id="yun3" class="bg" style="background-image:url(http://imgs.3songshu.com/www/yun3.png); width:100%; height:408px; position:absolute; position:fixed; left:0px; top:3000px; z-index:8"></div>
+    <div style="width: 10px; height: 700px; text-align: center; top:200px; z-index: 10;position: absolute; left: 50%; ">
+        <div style="width: 1300px; height: 800px;  margin-left: -600px;display: none;" id="songshubox"></div>
+    </div>
+
+    <div  style="position: fixed;top: 0;bottom: 0;left: 0;right: 0;background:rgba(0,0,0,0.4);z-index: 9;display: none" class="bigdialog"></div>
+
+<div style="width:100%; position:absolute; top:0px; z-index:9">
+	<!--关于我们-->
+	<div id="cc" class="cont" style="margin-top:1948px" onmouseout="hidde('ccs1')" onmousemove="clearhideTime()">
+		<div  style="float:left; width:380px; padding:50px;" class="bgb " id="whBox">
+			 <div><img src="./firstpage/xbt1.png" sytle=margin-top:-5px></div>
+			  <div class="jh" style="margin-top:16px">吃货世界，美食文化</div>
+                <div style="margin-top:62px;cursor:pointer;" onmouseover="show('ccs1',0)" class="whtitle">
+                    <div class="curitem"><span class="jh b" style="font-size:16px">Chapter One.</span><a class="b" href="http://www.3songshu.com/1.html" target="_blank" style="color: #000">品牌介绍</a></div>
+                    <div style="margin-top:25px;" ><a class="hs">01. 名称来源</a></div>
+                    <div style="margin-top:25px;" ><a class="hs">02. 成长发展</a></div>
+                </div>
+                <div style="margin-top:62px;cursor:pointer" onmouseover="show('ccs1',1)" class="whtitle">
+                    <div class="curitem"><span class="jh b" style="font-size:16px">Chapter Two.</span><a class="b" href="http://www.3songshu.com/1.html" target="_blank" style="color: #000">品牌理念</a></div>
+                    <div style="margin-top:25px;" ><a class="hs">01. 品牌定位</a></div>
+                    <div style="margin-top:25px;" ><a class="hs">02. 经营理念</a></div>
+                </div>
+		</div>
+
+		<div style="width:500px; background-color:#F7F7F7;float:left;height:520px; display:none" id="ccs1" class="bgb" onmouseover="clearhideTime()" onmouseout="hidde('ccs1')">
+
+	        <div  style="padding:50px;" class="whitem"><a name="jyfw"></a>
+	            <div class="enlarge"><img src="./about/building.jpg" height="300px" width="400px" ></div>
+		        <div style="font-size:16px; font-weight:bold">伊特大厦</div>
+                <div style="margin-top:20px;font-size: 14px;" class="hs hs-s">
+                        在山的那边海的那边，生活着吃货家族<br />
+                        他们活泼又聪明<br />
+                        调皮又伶俐<br />
+                        齐心协力，开动脑筋<br />
+                        发现生活中最单纯的幸福感~
+                </div>
+            </div>
+
+            <div style="padding:50px;" class="whitem"><a name="jyfw"></a>
+            	<div class="enlarge"><img src="./about/jx2.jpg" height="300px" width="420px" ></div>
+                <div style="font-size:20px; font-weight:bold;color:#e1251b">匠心十年，初心不改</div>
+                <div style="margin-top:20px;font-size: 14px;" class="hs hs-s">
+                        提供高品质食品<br />
+                        用美食感动世界<br />
+                </div>
+                    
+            </div>
+	    </div>
+    </div>
+     <!--零食王国-->
+     <div id="c1" class="cont" style="margin-top:200px;margin-right:0px;" onmouseout="hidde('ccs2')" onmousemove="clearhideTime()">
+     	<div style="width:430px; float:left; height:662px;">
+                <div id="ccs2" class="bgb" style="display: none" onmouseover="clearhideTime()" onmouseout="hidde('ccs2')">
+                    <div style="height: 400px;padding: 65px 0 0 55px;" class="productitem"><a name="jyfw"></a>
+                        <div style="font-size:16px; font-weight:bold">产品展示</div>
+                        <div style="font-size:15px; margin-top:40px; font-weight:bold;color: #3b3b3b">食品系列</div>
+                        <div style="margin-top:30px">
+                            <div style="float: left;width: 168px;">
+                                
+                                <div class="spxl"><span class="b">坚果</span><span class="hs">.萌版</span></div>
+                                <div class="spxl"><span class="b">坚果</span><span class="hs">.每日坚果</span></div>
+                                <div class="spxl"><span class="b">糕点</span><span class="hs">.网红糕点</span></div>
+                                <div class="spxl"><span class="b">果干</span><span class="hs">.伊特果干</span></div>
+                               
+                            </div>
+                            <div style="float: left;width: 168px;">
+                                <div class="spxl"><span class="b">零食</span><span class="hs">.舌尖料理</span></div>
+                                <div class="spxl"><span class="b">零食</span><span class="hs">.韩式美食</span></div>
+                                <div class="spxl"><span class="b">零食</span><span class="hs">.辣条美味</span></div>
+                                <div class="spxl"><span class="b">零食</span><span class="hs">.深夜食堂</span></div>
+                                
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="height: 400px;padding: 65px 0 0 55px;" class="productitem" ><a name="jyfw"></a>
+                        <div style="font-size:16px; font-weight:bold">产品展示</div>
+                        <div style="font-size:15px; margin-top:40px; font-weight:bold;color: #3b3b3b">周边系列</div>
+                        <div style="margin-top:30px">
+                            <p>吃货生活系列</p>
+                            <div style="overflow: hidden;margin-top: 16px;">
+                                <div style="float: left;width:168px;">
+
+                                    <div class="spxP"><span class="hs">01.日常沙发篇</span></div>
+                                    <div class="spxP"><span class="hs">03.日常追剧篇</span></div>
+                                    <div class="spxP"><span class="hs">05.日常躺尸篇</span></div>
+                                </div>
+                                <div style="float: left;width:168px;">
+                                    <div class="spxP"><span class="hs">02.外出学习篇</span></div>
+                                    <div class="spxP"><span class="hs">04.外出休息篇</span></div>
+                                    <div class="spxP"><span class="hs">06.外出工作篇</span></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div style="height: 400px;padding: 65px 0 0 55px;" class="productitem" ><a name="jyfw"></a>
+                        <div style="font-size:16px; font-weight:bold">产品展示</div>
+                        <div style="font-size:15px; margin-top:40px; font-weight:bold;color: #3b3b3b">跨界合作系列</div>
+                        <div style="margin-top:30px">
+                            <p>热门网红款</p>
+                            <div style="overflow: hidden;margin-top: 16px;">
+                                <div style="float: left;width:168px;">
+
+                                    <div class="spxP"><span class="hs">01.李佳琪最爱系列</span></div>
+                                    <div class="spxP"><span class="hs">03.薇娅爱不释手礼盒</span></div>
+                                    <div class="spxP"><span class="hs">05.青春有你系列</span></div>
+                                </div>
+                                <div style="float: left;width:168px;">
+                                    <div class="spxP"><span class="hs">02.复仇吃货联盟</span></div>
+                                    <div class="spxP"><span class="hs">04.哈利波特零食同款</span></div>
+                                    <div class="spxP"><span class="hs">06.柯南合作款</span></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+          <div style="float:left; width:350px; padding:50px;height: 400px" class="bgb">
+                <div><img src="./snack/xbt2.png"></div>
+                <div class="jh" style="margin-top:16px">品质化的呈现：好吃、好看、好玩</div>
+                <div style="margin-top:62px"><span class="jh b" style="font-size:16px">Chapter One.</span> <span class="b">产品展示</span></div>
+                <div style="margin-top:25px;cursor: pointer"  onmouseover="show('ccs2',0)"><a class="hs">01. 食品系列</a></div>
+                <div style="margin-top:25px;cursor: pointer"  onmouseover="show('ccs2',1)"><a class="hs">02. 周边系列</a></div>
+                <div style="margin-top:25px;cursor: pointer"  onmouseover="show('ccs2',2)"><a class="hs">03. 跨界合作</a></div>
+                
+            </div>
+     </div>
+     <!--vip-->
+        <div id="c2" class="cont" style="margin-top:200px;height:330px;" onmouseout="hidde('ccs3')" onmousemove="clearhideTime()">
+            <div style="float:left;width:390px;height: 540px; padding:50px" class="bgb">
+                <div><img src="./vip/vip1.png"></div>
+                <div class="jh" style="margin-top:16px">会员专享<br /></div>
+
+                <div style="margin-top:62px" ><span class="jh b" style="font-size:16px">Chapter One.</span><a class="b" href="./vip/vipp.html" target="_blank" style="color: #000">会员评价标准</a></div>
+
+               
+
+                <div style="margin-top:62px"  onmouseover="show('ccs3')"><span class="jh b" style="font-size:16px">Chapter Two.</span><a class="b" href="./vip/vipp.html" target="_blank" style="color: #000">加入会员</a></div>
+
+               
+            </div>
+            <div style="float:left; height:330px;" >
+                <div style="width:500px;height: 330px;padding:50px 0 0 0;display: none" class="bgb" id="ccs3" onmouseover="clearhideTime()" onmouseout="hidde('ccs3')">
+                   
+                    <div class="b" style="margin-top:46px">VIP卡</div>
+                    <div>
+                        <div style="margin-top:20px; float:left; margin-right:20px; width:136px">
+                            <div class="enlarge"><img src="./vip/card_02.jpg" height="90px" width="130px"></div>
+                            
+                        </div>
+                        <div style="margin-top:20px; float:left; margin-right:20px; width:136px">
+                            <div class="enlarge"><img src="./vip/card_03.jpg" height="90px" width="130px"></div>
+                            
+                        </div>
+                       
+                        <div style="margin-top:20px; float:left; margin-right:20px; width:136px">
+                            <div class="enlarge"><img src="./vip/card_a1.png" height="90px" width="130px"></div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div id="c3" class="cont" style="margin-top:200px" onmouseout="hidde('ccs4')" onmousemove="clearhideTime()" >
+            <div style="width:462px; float:left; height:400px;background: #F7F7F7;display: none" id="ccs4" onmouseover="clearhideTime()" onmouseout="hidde('ccs4')">
+
+                <div style="padding:50px;" class="whitem">
+                	<a name="jyfw"></a>
+                    <div style="font-size:16px; font-weight:bold;">精选美食</div>
+                    <div class="enlarge"style="margin-top:20px">
+                        
+                        <img src="./firstpage/mt1.jpg" height="250px" width="300px">
+                       
+                    </div>
+                </div>
+                 <div style="padding:50px;" class="whitem"><a name="jyfw"></a>
+                    <div style="font-size:16px; font-weight:bold;margin-top:30px;">爱心助力</div>
+                    <div class="enlarge"style="margin-top:20px">
+                    	<img src="./firstpage/mt2.jpg" height="250px" width="300px">
+    
+                    </div>
+                </div>
+                 <div style="padding:50px;" class="whitem"><a name="jyfw"></a>
+                    <div style="font-size:16px; font-weight:bold;margin-top:30px;">匠心奖牌</div>
+                    <div class="enlarge"style="margin-top:20px">
+                    	<img src="./firstpage/mt3.jpg" height="250px" width="300px">
+                       
+                       
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div style="float:right;width:430px; padding:50px;height: 400px" class="bgb">
+                <div><img src="./firstpage/xbt3.png"></div>
+                <div class="jh" style="margin-top:16px">他们眼中的吃货,和吃货眼中的世界</div>
+                <div style="margin-top:42px;cursor:pointer;" onmouseover="show('ccs4',2)"><span class="jh b" style="font-size:16px">Chapter One.</span> <span class="b">精选美食</span></div>
+                <div style="margin-top:42px;cursor:pointer;" onmouseover="show('ccs4',3)"><span class="jh b" style="font-size:16px">Chapter Two.</span> <span class="b">爱心助力</span></div>
+                <div style="margin-top:42px;cursor:pointer;" onmouseover="show('ccs4',4)"><span class="jh b" style="font-size:16px">Chapter Three.</span> <span class="b">匠心奖牌</span></div>
+
+                
+            </div>
+        </div>
+     <!--加入我们-->
+        <div id="c4" class="cont bgb" style="margin-top:200px; padding:50px;background-image:url(./firstpage/j2.jpg);">
+            <div style="float:left; margin-top:65px; margin-left:55px; width:460px">
+                <div><img src="./firstpage/join.png"></div>
+            </div>
+            <div style="float:left; width:400px">
+                <div style="margin-top:62px"><a class="b" href="" target="_blank" style="color: #e1251b">招聘</a></div>
+                <div style="margin-top:25px;" ><span style="color: #fff">我们是吃货世界的引领者</span></div>
+                <div style="margin-top:25px;" ><span style="color: #fff">我们是零食界的食力派</span></div>
+                <div style="margin-top:25px"><span style="color: #fff">我们是未来美味的创想家</span></div>
+                <div style="margin-top:25px;" ><span style="color: #fff">诚挚地邀请您加入我们吃货家族！</span></div>
+            </div>
+        </div>
+        
+        <div id="c5" style="margin-top:90px; width:100%;height:405px; display:none; background-image:url(./firstpage/gg1.jpg);">
+            
+        </div>
+
+        <div id="c6" style="height:297px; margin-left:600px; display:none; overflow:hidden;margin-top:100px;">
+            <img src="./firstpage/ls1.jpg" height="297px" width="206px">
+            <img src="./firstpage/ls2.jpg"height="297px" width="206px">
+            <img src="./firstpage/ls3.jpg"height="297px" width="206px">
+            <img src="./firstpage/ls4.jpg"height="297px" width="206px">
+            <img src="./firstpage/ls5.jpg"height="297px" width="206px">
+            <img src="./firstpage/ls6.jpg"height="297px" width="206px">
+        </div>
+        <div id="c7" style="background-color:#000000; display:none;margin-top:100px">
+            <div style="width:1547px; height:355px; margin:0 auto">
+                <div style="float:left; margin-left:200px; margin-top:50px; width:880px;">
+                    <div style="border-bottom:solid 1px #8E8F92; height:185px">
+                        <div style="margin-top:32px; float:left; width:200px">
+                            <div style="color:#FFFFFF; font-size:16px" class="b">合作项目</div>
+                            <div style="margin-top:30px;" class="hs">大客户团购</div>
+                            <div style="margin-top:10px;" class="hs">商务合作</div>
+                            <div style="margin-top:10px;" class="hs">媒体访问</div>
+                        </div>
+                        <div style="margin-top:32px; float:left; width:200px">
+                            <div style="color:#FFFFFF; font-size:16px" class="b">其他</div>
+                            <div style="margin-top:10px;" class="hs">免责声明</div>
+                            <div style="margin-top:10px;" class="hs">相关网址</div>
+                        </div>
+                        <div style="margin-top:32px; float:left; width:200px">
+                            	<a  style="color:#FFFFFF; font-size:16px" class="b" href="mainpage.html">返回顶端</a>
+                            
+                        </div>
+                        
+                        <div style="float:right; width:226px; height:158px;position: relative">
+                            <img src="./firstpage/lx2.png" style="width: 226px">
+                        </div>
+                    </div>
+                    <div style="margin-top:16px">
+                        <div style="float:left; width:92px; height:28px;"><span class="jh b">Eater's World</span> </div>
+                        <div style="float:left; margin-left:24px">
+                        	<span class="b bzb">Eater热线：</span>
+                        	 <span class="jh1 b">666-666-6666 </span> 
+                        	 <span class="b bzb">Eater地址：</span>
+                        	 <span class="jh1 b">前进大街2699号</span>
+                        	 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+</div>
+</div>
+
+
+</body>
+</html>
+<script src="http://imgs.3songshu.com/js/jquery.min.js" charset="utf-8" language="javascript">
+</script>
+<script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>
+<script src="http://www.lmlblog.com/blog/14/js/Snow.js"></script>
+<style type="text/css">
+.snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}
+</style>
+<div class="snow-container"></div>
+<script language="javascript">
+	 function loadingChange()
+    {
+        //if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
+        $("#load").hide();//当页面加载完成后将loading页隐藏
+        $("#main").fadeIn(2000);
+
+        $(".menu-item").mouseenter(function(){
+            $(".callmeul").slideDown();
+            $("#arion").addClass("Arrow_up");
+            $(".bigdialog").fadeIn();
+            stop();
+        }).mouseleave(function(){
+            $(".callmeul").slideUp();
+            $("#arion").removeClass("Arrow_up");
+            $(".bigdialog").fadeOut();
+            stop();
+        });
+
+
+        $(".menu_down").mouseenter(function(){
+            $(".QRcode").slideDown();
+            $(".bigdialog").fadeIn();
+            stop();
+        }).mouseleave(function(){
+            $(".QRcode").slideUp();
+            $(".bigdialog").fadeOut();
+            stop();
+        });
+//        $(".callmeul").mouseenter(function(){
+//            $(this).show();
+//        })
+        for(var i =0;i<movelist.length;i++) {
+            document.getElementById((movelist[i])).style.transform = "translateY(-" + (parseInt(document.getElementById((movelist[i])).style.top.replace("px", "")) + 400) + "px)";
+        }
+        document.getElementById("bg").style.transform = "translateY(-7200px)";
+
+        setTimeout(function () {
+            document.body.style.background = "url('./firstpage/bg6.png')";
+            //	attachment:fixed
+            document.body.style.backgroundAttachment = 'fixed';
+            //start();
+
+            //}
+
+            document.body.style.overflow="hidden";
+
+
+            $("#bg").addClass("syz_move");
+            setTimeout(function () {
+
+                for(var i =0;i<movelist.length;i++) {
+                    $("#" + movelist[i]).addClass("movebox2"); //document.getElementById(()).style.animation="movedonghua 5s 1;"
+                    (function (domid) {
+                        setTimeout(function () {
+                            $("#bg").removeClass("syz_move");
+                            document.getElementById("bg").style.transform = "translateY(0px)";
+                            document.getElementById(domid).style.transform = "translateY(0px)";
+                            $("#" + domid).removeClass("movebox2");
+                            document.body.style.overflowY="auto";
+                            document.body.scrollTop="0px";
+                            window_scroll_fn();
+
+                        }, 3500);
+                    })(movelist[i]);
+                }
+
+                setTimeout(function () {
+                    mymovie.c.loop_way = 1;
+                    document.getElementById("songshubox").style.display = "block";
+                    $("#cb6").fadeToggle(1000);
+
+
+                },2000)
+
+
+                setTimeout(function () {
+                    $("#cb7").fadeToggle(1000);
+                },3000)
+
+            }, 400);
+        },2000)
+
+
+
+
+    }
+
+    function loadimg(imglist,okfn) {
+        var mimglist = imglist;
+        var mokfn = okfn;
+        var loadok = 0;
+        var loadoklist = new Array();
+        var t = this;
+        for (var i = 0; i < mimglist.length; i++) {
+            var img = new Image();
+            img.src = mimglist[i];
+
+            if (img.readyState == "complete") {
+                if (loadoklist.indexOf(img.src) < 0) {
+                    loadoklist.push(img.src);
+                    loadok++;
+                }
+                t.loadok();
+            } else {
+                img.onload = function () {
+                    if (loadoklist.indexOf(this.src) < 0) {
+                        loadoklist.push(this.src);
+                        loadok++;
+                    }
+                    t.loadok();
+                }
+            }
+        }
+        this.loadok = function () {
+            if (loadok == mimglist.length) {
+                okfn();
+            }
+        }
+    }
+
+    var hidetime=null;
+
+    function hidde(id)
+    {
+        clearhideTime();
+        hidetime=setTimeout(function(){
+            $("#"+id).hide();
+        },100)
+
+    }
+
+    function clearhideTime(){
+        if(hidetime!=null){
+            clearTimeout(hidetime)
+        }
+    }
+
+    function show(id,x)
+    {
+
+        clearhideTime();
+
+        $(".whitem").hide().eq(x).show();
+        $(".productitem").hide().eq(x).show();
+
+        $("#"+id).show();
+    }
+
+
+    //--tz
+    $("#jyfw1").click(function(){
+        $('html,body').animate({scrollTop:2700},800,function(){
+        });
+    });
+
+    //--tz
+    $("#zyxz1").click(function(){
+        $('html,body').animate({scrollTop:5200},800,function(){
+        });
+    });
+
+
+    //    function showbg(cl){
+    //        $("."+cl).show();
+    //
+    //    }
+
+
+    loadimg(
+            ["http://imgs.3songshu.com/www/cb1.png",
+                "http://imgs.3songshu.com/www/cb2.png",
+                "http://imgs.3songshu.com/www/cb3.png",
+                "http://imgs.3songshu.com/www/cb4.png",
+                "http://imgs.3songshu.com/www/cb5.png",
+                "http://imgs.3songshu.com/www/scd.png",
+                "http://imgs.3songshu.com/www/bgy.jpg",
+                "http://imgs.3songshu.com/www/xhy.png",
+                "http://imgs.3songshu.com/www/yz.png",
+                "http://imgs.3songshu.com/www/yun3.png",
+                "http://imgs.3songshu.com/www/yun4.png",
+                "http://imgs.3songshu.com/www/yun5.png",
+                "http://imgs.3songshu.com/www/2323.png"
+            ],function () {
+                loadingChange();
+            });
+
+    //setTimeout("loadingChange()",4000);
+    var cc=0;
+    var c1=0;
+    var c2=0;
+    var c3=0;
+    var c4=0;
+    var c5=0;
+    var c6=0;
+    var c7=0;
+    var n=600;
+    var cb6=0;
+    var cb7=0;
+    var s1=0;
+    var t=7880;
+    var nt1=1;
+
+    function  window_scroll_fn() {
+        window.onscroll = function () {
+            var top = document.body.scrollTop + document.documentElement.scrollTop;
+            document.getElementById('cb6').style.top = (top * 2 * (-0.12) + 420) + 'px';
+            document.getElementById('cb7').style.top = (top * 2 * (-0.12) + 600) + 'px';
+            document.getElementById('scd').style.top = (top * 2 * (-0.07) + 450) + 'px';
+            document.getElementById('xhy').style.top = (top * 2 * (-0.07) + 120) + 'px';
+            document.getElementById('yun4').style.top = (top * 2 * (-0.25) + 2800) + 'px';
+            document.getElementById('yun5').style.top = (top * 2 * (-0.25) + 2500) + 'px';
+            document.getElementById('yun3').style.top = (top * 2 * (-0.35) + 4500) + 'px';
+            document.getElementById('cb5').style.top = (top * 2 * (-0.05) + 200) + 'px';
+            document.getElementById('cb4').style.top = (top * 2 * (-0.1) + 1000) + 'px';
+            document.getElementById('cb3').style.top = (top * 2 * (-0.15) + 1700) + 'px';
+            document.getElementById('cb2').style.top = (top * 2 * (-0.2) + 2200) + 'px';
+            document.getElementById('cb1').style.top = (top * 2 * (-0.3) + 3000) + 'px';
+            document.getElementById('bg').style.top = (top * 2 * (-0.5) + 6500) + 'px';
+
+            if (top > 1000 && cc == 0) {
+                $("#cc").fadeToggle(100);
+                cc = 1;
+            }
+            if (top > 2000 && c1 == 0) {
+                $("#c1").fadeToggle(100);
+                c1 = 1;
+            }
+            if (top > 3000 && c2 == 0) {
+                $("#c2").fadeToggle(100);
+                c2 = 1;
+            }
+            if (top > 3500 && c3 == 0) {
+                $("#c3").fadeToggle(100);
+                c3 = 1;
+            }
+            if (top > 4000 && c4 == 0) {
+                $("#c4").fadeToggle(100);
+                c4 = 1;
+            }
+            if (top > 5000 && c5 == 0) {
+                $("#c5").fadeToggle(100);
+                c5 = 1;
+                $("#c6").fadeToggle(100);
+                c6 = 1;
+                $("#c7").fadeToggle(100);
+            }
+            if (top > 5500 && c6 == 1) {
+                moveText();
+                c6 = 2;
+            }
+
+        };
+
+    }
+
+
+    function moveText(){
+        n=n-3;
+        document.getElementById('c6').style.marginLeft = n+'px';
+        if(n>1){setTimeout("moveText()",3);}
+    }
+    /*开场动画*/
+
+    var scale=1;
+    var movie = function (config) {
+        var t = this;
+        t.c = {
+            width: 0,
+            height: 0,
+            frames_sum: 0,
+            loop_way: 1,
+            loop_start: 0,
+            loop_end: 0,
+            loop_time: 50,
+            pic_Stage_width: 0,
+            pic_Stage_height: 0,
+            pic_path:"",
+            nowloopindex:0
+        }
+        t.c=config;
+
+        t.bl=1;
+        t.load = function (dom) {
+
+            t.c.width/=scale;
+            t.c.height/=scale;
+            t.c.pic_Stage_width/=scale;
+            t.c.pic_Stage_height/=scale;
+            t.bl = t.c.width / t.c.pic_Stage_width;
+            t.c.width=t.c.pic_Stage_width*t.bl;
+            t.bl= t.c.width / t.c.pic_Stage_width;
+            t.c.height=t.c.pic_Stage_height*t.bl;
+            t.divdom=document.createElement("DIV");
+            t.divdom.style.overflow="hidden";
+            t.divdom.style.height=t.c.height+"px";
+            t.divdom.style.width=t.c.width+"px";
+            t.picdom=new Image();
+            t.picdom.width=t.c.width*t.c.frames_sum;
+            t.picdom.src=t.c.pic_path;
+            t.divdom.appendChild(t.picdom);
+            dom.appendChild(t.divdom);
+
+            t.picdom.onload=function () {
+                t.go();
+            }
+        }
+
+
+        t.looptime = null;
+
+        t.divdom = null;
+        t.picdom = null;
+        t.state=0;
+        t.go = function () {
+            t.state=1;
+
+            if( t.looptime==null)
+            {
+                t.looptime=setTimeout(function () {
+                    t.loop();
+                },t.c.loop_time);
+            }
+
+        }
+        t.stop=function () {
+            t.state=0;
+        }
+        t.loop = function () {
+
+            if(t.state==1){
+                t.c.nowloopindex+=t.c.loop_way;
+                if(t.c.nowloopindex>t.c.loop_end)
+                {
+                    t.c.nowloopindex=t.c.loop_start;
+
+                }
+                if(t.c.nowloopindex<t.c.loop_start)
+                {
+                    t.c.nowloopindex=t.c.loop_end;
+                }
+                t.picdom.style.transform="translateX(-"+t.c.nowloopindex*(t.c.width)+"px)";
+
+            }
+            t.doloop(t.c.nowloopindex);
+            t.looptime=setTimeout(function () {
+                t.loop();
+            },t.c.loop_time);
+        }
+        t.stop = function () {
+        }
+        t.doloop = function (index) {
+        }
+
+
+    }
+
+
+
+    
+
+    mymovie.load(document.getElementById("songshubox"));
+    mymovie.c.loop_way=0;
+    mymovie.doloop=function (index) {
+        if(index==12) {
+            mymovie.state= 0;
+
+        }
+
+    }
+
+
+</script>
+
+
+
+
+       <!--
+<a href="/"style="visibility:visible;animation-delay: 0.3s;height:731px;">
+<img src="a2.jpg" alt="">
+</a>
+
+<div class="ibrand-red__txt"data-wow-delay=".3s"style="visibility: visible;animation-delay: 0.3s;">
+ 	<span class="ibrand-red__txt"></span>
+ 		<p>
+ 			伊特高端粮食
+ 			<br>
+ 			连续多年全国销售第一
+ 			<br>
+ 			精选全球211个国家食材
+ 			<br>
+ 			全球门店可绕地球三圈
+ 		</p>
+ 	</div>
+
+		<div class="header-menu">
+			<ul class="header-item-ul">
+				<li class="menu-item active">
+					<a class="menu-link1" href="javascript:void(0);">关于我们</a>
+					<div class="subMenu" style="height: 176px;">
+						<div class="subMenu-bg">
+							<img src="line.svg" alt="line">
+						</div>
+					</div>
+				</li>
+					
+				<li class="menu-item active">
+					<a class="menu-link2" href="javascript:void(0);">零食王国</a>
+					<div class="subMenu" style="height: 176px;">
+						<div class="subMenu-bg">
+							<img src="line.svg" alt="line">
+						</div>
+					</div>
+				</li>
+
+				<li class="menu-item active">
+					<a class="menu-link3" href="javascript:void(0);">VIP</a>
+					<div class="subMenu" style="height: 176px;">
+						<div class="subMenu-bg">
+							<img src="line.svg" alt="line">
+						</div>
+					</div>
+				</li>
+
+				<li class="menu-item active">
+					<a class="menu-link3" href="javascript:void(0);">联系我们</a>
+					<div class="subMenu" style="height: 176px;">
+						<div class="subMenu-bg">
+							<img src="line.svg" alt="line">
+						</div>
+					</div>
+				</li>
+
+			</ul>
+				
+		</div>
+		-->	
