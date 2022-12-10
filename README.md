@@ -74,4 +74,4 @@ If you'd like to request a new function, feel free to do so by opening an issueÂ
 [4]:http://www.sublimetext.com/
 
 ### License
-Greco79
+MIT
